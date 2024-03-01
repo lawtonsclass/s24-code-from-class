@@ -41,3 +41,13 @@ void Point::setY(double d) {
   // if (d < 0) { return; }
   y = d;
 }
+
+void Point::reset() {
+  // the following code creates NEW local vars
+  // called x & y -- they *shadow* the x & y member vars :(
+  // double x = 0.0;
+  // double y = 0.0;
+
+  x = 0.0;
+  y = 0.0;
+}
